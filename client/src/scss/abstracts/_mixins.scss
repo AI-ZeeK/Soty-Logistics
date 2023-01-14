@@ -1,0 +1,16 @@
+@mixin shadow-md {
+	box-shadow: rgba(50, 50, 93, 0.85) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.8) 0px 1px 3px -1px;
+}
+
+@mixin grid-layout($grid-temp: repeat(auto-fit, minmax(380px, 1fr))) {
+	display: grid;
+	grid-template-columns: $grid-temp;
+	gap: 2rem;
+}
+
+@mixin grid-layout-sm($grid-temp: repeat(auto-fit, minmax(240px, 1fr))) {
+	display: grid;
+	grid-template-columns: $grid-temp !important;
+	gap: 1rem !important;
+}
